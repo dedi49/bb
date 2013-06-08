@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"/>
+
+    <!-- The Templates -->
+    <script type="text/template" id="home">
+
+        <div data-role="header">
+            <h1>Backbone.js + jQuery Mobile</h1>
+        </div>
+
+        <div data-role="content">
+            <h3>Application Template for using Backbone.js and jQuery Mobile.</h3>
+            <p>Home</p>
+            <p>Navigate to:</p>
+
+            <ul data-role="listview"  data-inset="true">
+                <li><a href="#get-your-location">Use your current location</a></li>
+                <li><a href="#get-your-address">Enter your address</a></li>
+                <li><a href="#browse-alphabetical">Browse alphabetical listing</a></li>
+                <li><a href="#members">List some members</a></li>
+            </ul>
+        </div>
+
+    </script>
+
+    <script type="text/template" id="get-your-location">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>Page 1</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Location</p>
+        </div>
+
+    </script>
+
+    <script type="text/template" id="get-your-address">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>Address</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Address</p>
+        </div>
+
+    </script>
+
+    <script type="text/template" id="browse-alphabetical">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>Address</h1>
+        </div>
+
+        <div data-role="content">
+            <p>Browse alphabetical</p>
+        </div>
+
+    </script>
+
+    <script type="text/template" id="members">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>AMA Grassroots</h1>
+        </div>
+
+        <div data-role="content">
+            <p>List some members</p>
+            <div data-role="content">
+                <p>Member List</p>
+
+            </div>
+        </div>
+
+    </script>
+
+
+    <script type="text/template" id="vuong">
+        <a href="#members/<%= age %>"><strong><%= name %></strong> <%= age %></a>
+    </script>
+
+
+
+    <script type="text/template" id="member-detail">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>AMA Grassroots</h1>
+        </div>
+
+        <div data-role="content">
+            <p>List some members</p>
+            <div data-role="content">
+                <p>Member Detail</p>
+            </div>
+        </div>
+
+    </script>
+
+    <!-- The Scripts -->
+    <script src="lib/jquery-1.7.1.min.js"></script>
+    <script src="js/jqm-config.js"></script>
+    <script src="lib/jquery.mobile-1.0.1.min.js"></script>
+    <script src="http://underscorejs.org/underscore.js"></script>
+    <script src="http://backbonejs.org/backbone.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<script id="vuong" type="text/template">
+        <p><strong><%= name %></strong> <em><%= age %></em></p>
+    </script>
+    <div id="container"></div>
+</body>
+
+</html>
